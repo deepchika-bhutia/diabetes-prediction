@@ -1,0 +1,15 @@
+{
+  "name": "diabetes-project-devenv",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "postCreateCommand": "pip install gradio jupyterlab pandas scikit-learn matplotlib seaborn",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers"
+      ]
+    }
+  },
+  "forwardPorts": [7860, 8888]
+}
